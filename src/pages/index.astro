@@ -1,0 +1,111 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../site';
+---
+
+<Base
+  title="German-to-English technical translation for machine builders"
+  description="Jo Fernwood, a mechanical engineer, translates operating manuals, maintenance instructions, specifications and safety notes from German into English. Your terminology, kept across jobs. Fixed price before work starts."
+>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">German → English · Machine documentation only</p>
+      <h1>English manuals your engineers don’t have to rewrite.</h1>
+      <p class="lead">
+        I’m Jo Fernwood, a mechanical engineer who translates technical documentation from German into
+        English for machine builders: operating manuals, maintenance instructions, specifications and
+        safety notes. Nothing else.
+      </p>
+      <div class="actions">
+        <a class="button" href="/contact/">Ask for a fixed price</a>
+        <a class="button button-ghost" href="/services/">See what I translate</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Why machine builders work with me</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>An engineer who translates</h3>
+          <p>
+            I trained as a mechanical engineer. I understand what a component does before I put it into
+            English, so the translation describes the machine, not just the words.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Only machine documentation</h3>
+          <p>
+            I don’t translate marketing, contracts or websites. Operating manuals, maintenance
+            instructions, specifications and safety notes are all I do.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Your terminology, kept</h3>
+          <p>
+            Send me your terminology list, or we build one together on the first job. I keep it and use
+            it on every job after that.
+          </p>
+        </div>
+        <div class="card">
+          <h3>A fixed price first</h3>
+          <p>
+            Work is priced per word. You get a fixed price and agree to it before I start, so there are
+            no surprises on the invoice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container narrow">
+      <h2>What that means for your team</h2>
+      <ul class="checks">
+        <li>
+          <strong>Fewer review rounds for your own engineers.</strong> They check the English, rather than
+          rewrite it.
+        </li>
+        <li>
+          <strong>The same words for the same parts in every manual.</strong> Your terminology carries over
+          from one job to the next.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>How a job works</h2>
+      <ol class="steps">
+        <li>
+          <h3>Send the documents</h3>
+          <p>Email the German files and, if you have one, your terminology list.</p>
+        </li>
+        <li>
+          <h3>Agree a fixed price</h3>
+          <p>I count the words and send a fixed price. Nothing starts until you agree.</p>
+        </li>
+        <li>
+          <h3>Terminology settled</h3>
+          <p>I use your list, or we build one together on the first job.</p>
+        </li>
+        <li>
+          <h3>Receive the English</h3>
+          <p>You get the translation, and your terminology is kept for the next job.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Have a manual to translate?</h2>
+      <p>Send it over and I’ll reply with a fixed price.</p>
+      <div class="actions">
+        <a class="button" href={`mailto:${site.email}`}>Email {site.email}</a>
+      </div>
+    </div>
+  </section>
+</Base>

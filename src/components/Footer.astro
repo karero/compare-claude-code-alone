@@ -1,0 +1,24 @@
+---
+import { site, nav } from '../site';
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-name">{site.name}</p>
+      <p>German to English, for machine builders.</p>
+    </div>
+    <div>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      <p><a href={site.phoneHref}>{site.phone}</a></p>
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        {nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <p class="notice">{site.footerNotice}</p>
+  </div>
+</footer>

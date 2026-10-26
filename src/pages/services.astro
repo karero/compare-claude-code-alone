@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../site';
+---
+
+<Base
+  title="Services"
+  description="German-to-English translation of operating manuals, maintenance instructions, specifications and safety notes. Priced per word, fixed before work starts, using your own terminology."
+>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Services</p>
+      <h1>German to English, for machine documentation</h1>
+      <p class="lead">
+        One service, done by one person: translating the documents that ship with your machines, from
+        German into English.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>What I translate</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Operating manuals</h3>
+          <p>How to set up, run and shut down the machine, written for the people who operate it.</p>
+        </div>
+        <div class="card">
+          <h3>Maintenance instructions</h3>
+          <p>Inspection, servicing, part replacement and troubleshooting procedures.</p>
+        </div>
+        <div class="card">
+          <h3>Specifications</h3>
+          <p>Technical data, component descriptions and requirements.</p>
+        </div>
+        <div class="card">
+          <h3>Safety notes</h3>
+          <p>Warnings, hazard descriptions and safety instructions.</p>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem">
+        I only translate from German into English, and only this kind of document.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container narrow">
+      <h2>Your terminology</h2>
+      <p>
+        The same part should have the same name in every manual you publish. If you already have a
+        terminology list, send it with the first job and I’ll work to it.
+      </p>
+      <p>
+        If you don’t, we build one together on the first job: I collect the terms, check them with you,
+        and keep the agreed list. Every later job uses the same list, so the English stays consistent
+        across your documentation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2>Pricing</h2>
+      <p>
+        Work is priced per word. Before I start, I send you a fixed price for the job. Once you agree to
+        it, that is what you pay.
+      </p>
+      <p>To get a price, email the documents you need translated.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>How this compares</h2>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th scope="col">Option</th>
+              <th scope="col">How it usually works</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Machine translation, reviewed in-house</th>
+              <td>One of your own engineers checks and corrects the output, taking time away from their own work.</td>
+            </tr>
+            <tr>
+              <th scope="row">A large translation agency</th>
+              <td>Your work may go to different translators from job to job, who may not be specialists in machinery.</td>
+            </tr>
+            <tr>
+              <th scope="row">A generalist freelance translator</th>
+              <td>Translates many kinds of text, without an engineering background.</td>
+            </tr>
+            <tr>
+              <th scope="row">{site.name}</th>
+              <td>An engineer who translates only machine documentation, keeps your terminology across jobs, and agrees a fixed price before starting.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Get a fixed price</h2>
+      <p>Email the German documents and I’ll reply with a price.</p>
+      <div class="actions">
+        <a class="button" href="/contact/">Contact</a>
+      </div>
+    </div>
+  </section>
+</Base>

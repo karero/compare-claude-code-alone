@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../site';
+
+const subject = encodeURIComponent('Translation request');
+---
+
+<Base
+  title="Contact"
+  description="Email Jo Fernwood for a fixed price on German-to-English translation of your machine documentation."
+>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Ask for a fixed price</h1>
+      <p class="lead">Email the documents you need translated and I’ll reply with a fixed price.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <ul class="contact-list">
+            <li>
+              <span>Email</span>
+              <a href={`mailto:${site.email}?subject=${subject}`}>{site.email}</a>
+            </li>
+            <li>
+              <span>Phone</span>
+              <a href={site.phoneHref}>{site.phone}</a>
+            </li>
+          </ul>
+          <div class="actions">
+            <a class="button" href={`mailto:${site.email}?subject=${subject}`}>Write an email</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2 style="font-size:1.25rem">What to include</h2>
+          <ul>
+            <li>The German documents, or a sample if they aren’t final yet</li>
+            <li>Your terminology list, if you have one</li>
+            <li>When you need the English</li>
+          </ul>
+          <p>The service is online only; there is no office to visit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
