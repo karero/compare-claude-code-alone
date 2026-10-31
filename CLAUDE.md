@@ -13,7 +13,7 @@ Do not deploy from here; publishing is handled separately.
 
 ## Where things are
 - `src/site.ts` — business name, email, phone, footer notice, navigation. Change contact details here only.
-- `src/pages/` — one file per page: `index.astro` (home), `services.astro`, `about.astro`, `contact.astro`, `404.astro`.
+- `src/pages/` — one file per page: `index.astro` (home), `services.astro`, `how-it-works.astro`, `about.astro`, `contact.astro`, `404.astro`.
 - `src/layouts/Base.astro` — page shell: `<head>`, header, footer. Every page uses it.
 - `src/components/Header.astro`, `Footer.astro`
 - `src/styles/global.css` — all styling; colours are CSS variables at the top.
@@ -24,4 +24,4 @@ Do not deploy from here; publishing is handled separately.
 - Only these contact details: email jo@example.com, phone +1 555 0142. No street address.
 - Do not invent customers, testimonials, quotes, client names, figures, awards or certifications.
 - One language (English). No analytics, no tracking scripts, no server code, no contact form — contact is by email link.
-- Pages: home, services, about, contact. No blog.
+- Pages: home, services, how it works, about, contact. No blog.
