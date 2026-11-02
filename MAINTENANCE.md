@@ -19,7 +19,7 @@ https://github.com/karero/compare-claude-code-croftweaver/tree/maintenance.
   image, git, Claude Code). It saw only the site at `/site`, a local bare repository at
   `/remote.git` (its `origin`), the material at `/incoming` (read-only) and its own configuration.
   No GitHub or Cloudflare credentials were inside; the one credential was a Claude Code token made
-  for the test and revoked afterwards.
+  for this test alone.
 - The harness is the first comparison's, with these changes: `git push` allowed (to `/remote.git`),
   `git push --no-verify`, `git remote add`, `git remote set-url` and `wrangler` denied (`gh` stays
   denied), `--add-dir /incoming`, and a four-hour deadline outside the session.
@@ -84,7 +84,7 @@ said, although the assistant had pointed out that it shows a blueprint.
 - PageSpeed Insights, mobile, five runs (Lighthouse 13.6.0, 31 October): 100 / 100 / 100 / 69 in
   every run (performance, accessibility, best practices, SEO; SEO is 69 because of the `noindex`
   header). "Improve image delivery": estimated saving 102 KiB on the photo. Page weight 127 KiB.
-- W3C Nu HTML Checker: no errors; one note ("Section lacks heading").
+- W3C Nu HTML Checker: no errors; one warning ("Section lacks heading").
 - W3C Link Checker: no broken links (two `mailto:` links it does not check).
 - From the built HTML: title "How a job works — Fernwood Technical Translation" (48 characters),
   description 90 characters, a canonical link, in the sitemap, and linked from the main menu as
